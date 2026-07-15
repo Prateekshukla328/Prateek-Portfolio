@@ -44,7 +44,10 @@ height:260px;
 
 .nav-links{
 
-display:none;
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+justify-content:center;
 
 }
 
@@ -544,6 +547,35 @@ font-size:30px;
 
 padding:18px;
 
+}
+
+}
+/* ===== Temporary Mobile Navbar Fix ===== */
+
+@media (max-width:768px){
+
+.navbar{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+.nav-links{
+    display:flex !important;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+    width:100%;
+}
+
+.nav-links li{
+    list-style:none;
+}
+
+.resume-btn{
+    display:none;
 }
 
 }
