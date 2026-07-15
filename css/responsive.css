@@ -44,10 +44,7 @@ height:260px;
 
 .nav-links{
 
-display:flex;
-gap:15px;
-flex-wrap:wrap;
-justify-content:center;
+display:none;
 
 }
 
